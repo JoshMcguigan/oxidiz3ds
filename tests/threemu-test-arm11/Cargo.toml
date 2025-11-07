@@ -1,0 +1,17 @@
+[package]
+name = "threemu-test-arm11"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+oxidiz3ds-hw = { path = "../../crates/oxidiz3ds-hw" }
+
+# Optional: common test helpers
+[lib]
+name = "arm11_test_helpers"
+path = "src/lib.rs"
+
+# Test binaries
+[[bin]]
+name = "minimal_pass"
+path = "src/bin/minimal_pass.rs"

@@ -1,0 +1,27 @@
+[package]
+name = "threemu"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "threemu"
+path = "src/lib.rs"
+
+[[bin]]
+name = "threemu"
+path = "src/bin/gui.rs"
+
+[[bin]]
+name = "threemu-cli"
+path = "src/bin/cli.rs"
+
+[dependencies]
+oxidiz3ds-hw = { path = "../oxidiz3ds-hw" }
+unicorn-engine = "2.1.5"
+winit = "0.30"
+softbuffer = "0.4"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+clap = { version = "4", features = ["derive"] }
+fatfs = "0.3"
+fscommon = "0.1"

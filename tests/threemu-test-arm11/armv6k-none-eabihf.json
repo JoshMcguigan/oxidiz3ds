@@ -1,0 +1,18 @@
+{
+  "abi": "eabihf",
+  "arch": "arm",
+  "cpu": "mpcore",
+  "data-layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+  "emit-debug-gdb-scripts": false,
+  "exe-suffix": "",
+  "features": "+vfp2,+v6k,+db",
+  "frame-pointer": "always",
+  "linker": "rust-lld",
+  "linker-flavor": "gnu-lld",
+  "llvm-floatabi": "hard",
+  "llvm-target": "armv6k-none-eabihf",
+  "max-atomic-width": 32,
+  "panic-strategy": "abort",
+  "relocation-model": "static",
+  "target-pointer-width": 32
+}

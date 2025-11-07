@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/threemu",
+    "crates/oxidiz3ds-hw",
+    "tests/threemu-test-arm9",
+    "tests/threemu-test-arm11",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"

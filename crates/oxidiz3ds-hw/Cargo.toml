@@ -1,0 +1,6 @@
+[package]
+name = "oxidiz3ds-hw"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]

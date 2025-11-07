@@ -1,0 +1,15 @@
+[package]
+name = "threemu-test-arm9"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+oxidiz3ds-hw = { path = "../../crates/oxidiz3ds-hw" }
+
+[lib]
+name = "arm9_test_helpers"
+path = "src/lib.rs"
+
+[[bin]]
+name = "minimal_pass"
+path = "src/bin/minimal_pass.rs"
